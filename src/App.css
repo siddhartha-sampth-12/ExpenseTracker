@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f5f7fc;
+  color: #172033;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* AUTHENTICATION */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #edf4ff, #f8faff, #e8f0ff);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background: white;
+  padding: 38px;
+  border-radius: 20px;
+  box-shadow: 0 12px 45px rgba(35, 75, 140, 0.10);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.brand-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: #2563eb;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.brand h2 {
+  font-size: 19px;
+  color: #1e3a8a;
+}
+
+.auth-card h1 {
+  font-size: 27px;
+  margin-bottom: 9px;
+  color: #172033;
+}
+
+.subtitle {
+  color: #8792a5;
+  font-size: 14px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+.auth-card form,
+.panel form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-card label,
+.panel label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34415a;
+}
+
+.auth-card input:not([type="checkbox"]),
+.panel input,
+.panel select {
+  width: 100%;
+  height: 47px;
+  border: 1px solid #dfe5ef;
+  border-radius: 9px;
+  padding: 0 13px;
+  margin-bottom: 19px;
+  outline: none;
+  background: white;
+  color: #172033;
+  transition: 0.2s;
+}
+
+.auth-card input:focus,
+.panel input:focus,
+.panel select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10);
+}
+
+.show-password {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 19px;
+  font-weight: 400 !important;
+  cursor: pointer;
+}
+
+.show-password input {
+  accent-color: #2563eb;
+}
+
+.primary-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  height: 48px;
+  border-radius: 9px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.auth-footer {
+  text-align: center;
+  color: #7b879b;
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+.auth-footer a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.error-message {
+  color: #dc2626;
+  background: #fef2f2;
+  padding: 11px;
+  border-radius: 7px;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+/* DASHBOARD HEADER */
+
+.dashboard {
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  background: white;
+  min-height: 82px;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-header .brand {
+  margin: 0;
+}
+
+.dashboard-header .brand span {
+  display: block;
+  font-size: 11px;
+  color: #8994a7;
+  margin-top: 4px;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.logout-btn {
+  background: #eff4ff;
+  color: #2563eb;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.logout-btn:hover {
+  background: #dce8ff;
+}
+
+/* DASHBOARD CONTENT */
+
+.dashboard-content {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 45px 25px;
+}
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.welcome-section h1 {
+  font-size: 28px;
+  margin-bottom: 9px;
+}
+
+.welcome-section p {
+  color: #8792a5;
+  font-size: 14px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: white;
+  padding: 27px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(20, 50, 100, 0.04);
+  border: 1px solid #edf0f5;
+}
+
+.summary-card span {
+  color: #7b879b;
+  font-size: 14px;
+}
+
+.summary-card h2 {
+  font-size: 27px;
+  margin-top: 14px;
+}
+
+.balance-card {
+  border-top: 4px solid #2563eb;
+}
+
+.income-card {
+  border-top: 4px solid #16a34a;
+}
+
+.expense-card {
+  border-top: 4px solid #ef4444;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.5fr;
+  gap: 22px;
+}
+
+.panel {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid #edf0f5;
+  box-shadow: 0 5px 20px rgba(20, 50, 100, 0.04);
+  min-width: 0;
+}
+
+.panel h2 {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.panel .primary-btn {
+  margin-top: 5px;
+}
+
+.empty-message {
+  color: #8994a7;
+  font-size: 14px;
+  text-align: center;
+  padding: 35px 10px;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-item small {
+  display: block;
+  color: #929bad;
+  font-size: 11px;
+  margin-top: 6px;
+}
+
+.transaction-item strong {
+  font-size: 13px;
+}
+
+.transaction-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.income-text {
+  color: #16a34a;
+}
+
+.expense-text {
+  color: #ef4444;
+}
+
+.delete-btn {
+  border: none;
+  background: #fff1f2;
+  color: #dc2626;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-card {
+    padding: 25px 20px;
+  }
+
+  .dashboard-header {
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .dashboard-header .brand h2 {
+    font-size: 16px;
+  }
+
+  .user-section {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .dashboard-content {
+    padding: 30px 15px;
+  }
+
+  .welcome-section h1 {
+    font-size: 23px;
+  }
+
+  .summary-card h2 {
+    font-size: 23px;
+  }
+
+  .panel {
+    padding: 18px;
+  }
+}
